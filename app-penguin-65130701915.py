@@ -37,7 +37,7 @@ x_new = pd.DataFrame({
 # Encoding
 x_new['island'] = island_encoder.transform(x_new['island'])
 x_new['sex'] = sex_encoder.transform(x_new['sex'])
-x_new
+print(x_new)
 # Prediction
 y_pred_new = model.predict(x_new)
 result = species_encoder.inverse_transform(y_pred_new)
