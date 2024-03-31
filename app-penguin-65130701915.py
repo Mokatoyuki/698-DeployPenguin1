@@ -27,7 +27,7 @@ sex_input = st.selectbox('Select sex:', ['MALE', 'FEMALE'])
 # Create a DataFrame with user input
 x_new = pd.DataFrame({
     'island': [island_input],
-    # 'culmen_length_mm': [culmen_length_input],
+    'culmen_length_mm': [culmen_length_input],
     'culmen_depth_mm': [culmen_depth_input],
     'flipper_length_mm': [flipper_length_input],
     'body_mass_g': [body_mass_input],
