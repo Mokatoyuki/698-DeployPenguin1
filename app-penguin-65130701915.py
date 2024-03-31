@@ -40,6 +40,7 @@ x_new['sex'] = sex_encoder.transform(x_new['sex'])
 print(x_new)
 # Prediction
 y_pred_new = model.predict(x_new)
+print(y_pred_new)
 result = species_encoder.inverse_transform(y_pred_new)
 
 # Display result
